@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main (void)
+{
+ int n,m;
+ printf("n="); scanf("%d", &n);     
+ m=0;             // novoto chislo purvo priema stoinostta na 0
+ while(n>0)    
+  {
+   m=m*10 + n%10;     // novoto chislo e ravno na predishhnoto   m, umnojeno po 10 i kum nego pribavqme poslednata cifra ot n  primer: 23*10 + 13%10=230+3=233
+   n=n/10;    // prmer: 256/10 = 25            
+  }
+ printf("Chisloto e %d", m );
+
+}

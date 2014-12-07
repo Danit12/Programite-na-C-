@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void main (void)
+{
+
+    int n, a, i, max;
+    printf("Broi chisla="); scanf("%d", &n);
+    printf("a="); scanf("%d", &a);
+    i=1;        // i priema stoinostta na 1 
+    max=a;     // max priema stoinostta na  a 
+    while(i<n)     // cikulut shte produlji dokato  i  e po - malko ot chisloto, koeto sme vuveli (n)
+    {
+        printf("a="); scanf("%d", &a);     // vuvejdame vsqko sledvashto chislo 
+        if(a> max) max=a;              // ako novovuvedenoto chislo e po - golqmo ot predishnoto => max priema stoinostta na novoto chislo, v protiven sluchai staroto chislo ostava max
+        i++;
+    }
+    printf("\n max=%d", max);     // izvejda nai - golqmoto chislo(max)
+
+}

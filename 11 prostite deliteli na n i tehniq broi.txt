@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main(void)                     // predstavete si, che tazi zadacha e sbor ot tazi za namirane na vsichi deliteli na n i tehniq broi i zadachata za dali edno chislo e prosto ili ne 
+{
+    int n,i=2,s=0,a=2;
+    do{ printf("n=");scanf("%d",&n); }while(n<1);
+     while(i<=n)    // cikulut shte produljava, dokato i e po - malko ili ravno ot n 
+ {
+       if(n%i==0)      // ako   i  deli tochno n => i  e delitel i otivame nadolu da proverim dali e prost delitel
+     {
+      while(i%a!=0)    // dokato i ne se deli na   a,  a shte se uvelichava s edenica
+       {
+         a++;
+         }
+          if(a==i)      // ako   a   e ravno na   i  => edinstveniq delitel na samiq delitel na n, e tozi delitel  primer: imame chisloto n = 33, stigame do delitel(i) = 11 i kogato go proverim, edinstvenoto chislo (a), na koeto se deli 11-skata sled 2 e samoto to (11) => 11 e prost delitel na 33 
+         {                                                   
+        s++;                        // ako e izpulneno po - gornoto uslovie  brpqt na prostite deliteli se uvelichava s edinica 
+        printf("\n prost delitel e %d", a);     // izvejda se prostiq delitel 
+       }
+    }
+       i++;       // broqchut se uvelichava, za da produlji cikula 
+ }
+       printf("\n Broi prosti deliteli %d", s);             // izvejda se broq na prostite deliteli 
+}

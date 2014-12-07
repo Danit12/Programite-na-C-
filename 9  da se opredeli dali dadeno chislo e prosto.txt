@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main (void)
+{
+    int n, i=1,b=0;
+do{printf("n="); scanf("%d", &n);}while(n<1);
+
+  while(i<=n)
+   {
+    if(n%i==0) b++;   // ako   i   e delitel, broqchut  b shte se uvelichava s edinica 
+    i++;
+   }
+  if(b==2) printf("Da, prosto e ",i);    // ako broqchut e raven na 2, toest chisloto da se deli tochno samo na 1 i na sebesi => izvejda, che e prosto 
+  else printf("NE e prosto ", i);            // v protiven sluchai izvejda, 4e ne e prosto 
+}
+
+

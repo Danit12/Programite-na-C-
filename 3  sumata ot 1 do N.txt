@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main (void)
+{
+ int n, i, s;
+ do{printf("n="); scanf("%d", &n);}while(n<1);
+
+ for(s=0,i=1; i<=n; i++) s=s+i;     // s priema stoinostta na 0, i - na 1  i dokato   i e po - malko ili ravno na   n cikulut shte produlji  i  sumata (s) shte se uvelichava s ,, i '', a samiqt broqch ( i ) shte se uvelichava s edinica
+
+ printf("Sumata e %d", s);     //izvejda sumata
+}

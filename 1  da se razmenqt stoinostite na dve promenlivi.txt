@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+   void main (void)
+{
+    int a, b;
+    printf("a="); scanf("%d", &a); // vuvejdame a i b  
+    printf("b="); scanf("%d", &b);
+
+     a=a+b; // a priema stoinostta na a + b
+     b=a-b;  // b priema stoinostta na a - b, koeto e (a+b) - b = a
+     a=a-b;   // a priema stoinostta na a -b, koeto e (a+b) - a =b
+
+    printf("a=%d   b=%d", a,b);     // izvejda ni stoinostite 
+
+}

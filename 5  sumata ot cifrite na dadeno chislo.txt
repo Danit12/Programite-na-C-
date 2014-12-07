@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main (void)
+{
+ int n, i, s;
+ printf("Chisloto e "); scanf("%d", &n);
+ i=0;
+ s=0;
+ while(i<n)
+  {
+    s=s+n%10;    // sumata priema stoinostta na segashnata  suma plus poslednata cifra ot chisloto n   primer:256%10=6
+    n=n/10;     // chisloto n priema stoinostta na chisloto n bez poslednata cifra    primer: 256/10= 25 
+    i++;
+  }
+ printf("Sumata ot cifrite e %d", s);
+
+}
